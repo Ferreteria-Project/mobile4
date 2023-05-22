@@ -6,22 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".agregarproducto3">
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <Button
+        android:id="@+id/btnSiguienteD2"
+        android:layout_width="351dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/button_edityellow"
+        android:text="Siguiente"
+        android:textColor="@color/black"
+        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        app:layout_constraintTop_toBottomOf="@+id/txtubicacion"
+        app:layout_constraintVertical_bias="0.643" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -77,22 +76,96 @@
 
     <EditText
         android:id="@+id/txtnomP"
-        android:layout_width="350dp"
-        android:layout_height="56dp"
+        android:layout_width="380dp"
+        android:layout_height="59dp"
         android:background="@drawable/custom_edittext"
-        android:drawableStart="@drawable/user2"
+        android:drawableStart="@drawable/martillo"
         android:drawablePadding="10dp"
         android:elevation="5dp"
         android:ems="10"
-        android:hint="Ejemplo: Martillo"
+        android:hint="Nombre del producto, ejemplo: Martillo"
         android:inputType="textPersonName"
         android:paddingStart="13dp"
         android:textColor="@color/black"
         android:textColorHint="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgf"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/txtdescrip"
+        android:layout_width="376dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/documento"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Descripcion del producto, ejemplo: Este martillo es perfecto para hacer..."
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnomP"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <EditText
+        android:id="@+id/txtprecios"
+        android:layout_width="373dp"
+        android:layout_height="58dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/money"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Precio del producto, ejemplo: $12.25"
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescrip"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/txtubicacion"
+        android:layout_width="376dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/ubicacionnn"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Ubicación de la surcusal, ejemplo: 5° avenida norte"
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprecios"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="350dp"
+        android:layout_height="44dp"
+        android:background="@drawable/custom_buttongrey"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSiguienteD2"
+        app:layout_constraintVertical_bias="0.287" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
