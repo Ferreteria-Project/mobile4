@@ -54,7 +54,7 @@ class FotoPerfil : AppCompatActivity() {
         binding.btnSiguienteF.setOnClickListener {
             FirebaseApp.initializeApp(this)
             uploadImage()
-            val open: Intent = Intent(this, Home::class.java)
+            val open: Intent = Intent(this, LoginActivity::class.java)
             startActivity(open)
         }
     }

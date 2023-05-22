@@ -4,34 +4,180 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="#F9CD16"
     tools:context=".LoginActivity">
 
-    <!-- login_activity.xml -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+    <ImageView
+        android:id="@+id/OvaloGris"
+        android:layout_width="416dp"
+        android:layout_height="125dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/interfaz2" />
 
-        <!-- Título o logo de la aplicación -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="My App"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="32dp"/>
+    <ImageView
+        android:id="@+id/OvaloGris2"
+        android:layout_width="426dp"
+        android:layout_height="101dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/interfaz3" />
 
-        <!-- Botón de inicio de sesión con Google -->
-        <Button
-            android:id="@+id/buttonLoginWithGoogle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Iniciar sesión con Google"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="32dp"/>
+    <ImageView
+        android:id="@+id/CuadradoBlancoFondo"
+        android:layout_width="378dp"
+        android:layout_height="552dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.653"
+        app:srcCompat="@drawable/cuadrofondoblanco" />
 
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/CirculoNegro"
+        android:layout_width="215dp"
+        android:layout_height="201dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintEnd_toEndOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/circulonegro" />
 
+    <ImageView
+        android:id="@+id/LogoFerreteria"
+        android:layout_width="171dp"
+        android:layout_height="166dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/CirculoNegro"
+        app:layout_constraintEnd_toEndOf="@+id/CirculoNegro"
+        app:layout_constraintStart_toStartOf="@+id/CirculoNegro"
+        app:layout_constraintTop_toTopOf="@+id/CirculoNegro"
+        app:layout_constraintVertical_bias="0.473"
+        app:srcCompat="@drawable/logoferreteria" />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/user2"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintEnd_toEndOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintStart_toStartOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintTop_toTopOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/cerrar2"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintEnd_toEndOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintStart_toStartOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsername"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/labelLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Log In"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsername"
+        app:layout_constraintEnd_toEndOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintStart_toStartOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintTop_toBottomOf="@+id/CirculoNegro"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/LabelRestablecer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:text="¿Has olvidado tu contraseña?"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintEnd_toEndOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintStart_toStartOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
+        android:background="@drawable/custom_buttongrey"
+        android:text="Iniciar Sesión"
+        app:layout_constraintBottom_toBottomOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintEnd_toEndOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintStart_toStartOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintTop_toBottomOf="@+id/LabelRestablecer"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <Button
+        android:id="@+id/btnrestablecer"
+        android:layout_width="180dp"
+        android:layout_height="18dp"
+        android:alpha="0"
+        android:backgroundTint="@android:color/transparent"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="@+id/LabelRestablecer"
+        app:layout_constraintEnd_toEndOf="@+id/LabelRestablecer"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="@+id/LabelRestablecer"
+        app:layout_constraintTop_toTopOf="@+id/LabelRestablecer"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <Button
+        android:id="@+id/btnRegistrarseL"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:text="Registrarse"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintEnd_toEndOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintStart_toStartOf="@+id/CuadradoBlancoFondo"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
+        app:layout_constraintVertical_bias="0.441" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
