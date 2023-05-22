@@ -12,11 +12,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn = findViewById(R.id.button)
-
-        btn.setOnClickListener {
-            val open: Intent = Intent (this, FotoPerfil::class.java)
-            startActivity(open)
-        }
     }
 }
