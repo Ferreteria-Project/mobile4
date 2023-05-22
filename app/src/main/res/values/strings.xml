@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Ferreteria Final</string>
+    <string name="title_activity_agregar_producto1">agregarProducto1</string>
 </resources>

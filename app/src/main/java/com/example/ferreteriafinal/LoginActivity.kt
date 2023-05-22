@@ -18,6 +18,10 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Thread.sleep(2000)
+        setTheme(R.style.splashcreen)
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 

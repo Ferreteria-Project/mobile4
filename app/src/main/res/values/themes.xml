@@ -16,9 +16,11 @@
 
     <style name="splashcreen" parent="Theme.AppCompat.NoActionBar">
 
-        <item name="android:windowBackground" >@drawable/fondo_splash </item>
+        <item name="android:windowBackground">@drawable/fondo_splash</item>
         <!-- <item name="android:statusBarColor" tools:targetApi="1"> ?attr/colorPrimary </item> -->
 
     </style>
+
+    <style name="Theme.Design.NoActionBar" parent="android:Theme.Material.Light.NoActionBar" />
 
 </resources>

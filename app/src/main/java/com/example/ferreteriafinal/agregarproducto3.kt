@@ -3,9 +3,9 @@ package com.example.ferreteriafinal
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class AgregarProducto : AppCompatActivity() {
+class agregarproducto3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_agregar_producto)
+        setContentView(R.layout.activity_agregarproducto3)
     }
 }

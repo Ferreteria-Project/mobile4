@@ -35,8 +35,7 @@ class DatosPersonales : AppCompatActivity(), View.OnClickListener {
     private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Thread.sleep(2000)
-        setTheme(R.style.splashcreen)
+
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos_personales)
