@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrarse">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".RegistrarseActivity">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRegistroEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse con Correo Electrónico"
+            android:layout_below="@id/tvTitulo"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnRegistroGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrarse con Google"
+            android:layout_below="@id/btnRegistroEmail"
+            android:layout_marginBottom="16dp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

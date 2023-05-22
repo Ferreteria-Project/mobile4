@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="@color/white"
+    android:keyboardNavigationCluster="true"
+    tools:context=".Mail">
+
+    <Button
+        android:id="@+id/btnBackM"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:background="@drawable/flechaizquierda"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/lbDatosM"
+        android:layout_width="368dp"
+        android:layout_height="33dp"
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:text="¿Cuál es tu correo electrónico?"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <EditText
+        android:id="@+id/txtMailM"
+        android:layout_width="378dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textbox_edit"
+        android:drawableStart="@drawable/mail"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"
+        android:hint="Dirección de Correo Electrónico"
+        android:inputType="textEmailAddress"
+        android:keyboardNavigationCluster="true"
+        android:paddingStart="13dp"
+        android:tag="1"
+        android:textColor="@color/black"
+        android:textColorHint="#aaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lbDatosM" />
+
+    <ImageView
+        android:id="@+id/lbFerreteriaD"
+        android:layout_width="169dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/ferreteriatext" />
+
+    <RadioButton
+        android:id="@+id/rbPromoM"
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:buttonTint="@color/black"
+        android:buttonTintMode="src_in"
+        android:checked="false"
+        android:drawablePadding="10dp"
+        android:focusable="false"
+        android:fontFamily="sans-serif-black"
+        android:text="Quiero recibir novedades, promociones y otros mensajes sobre Ferretería"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSiguienteM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMailM"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSiguienteM"
+        android:layout_width="359dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_edityellow"
+        android:text="Siguiente"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMailM"
+        app:layout_constraintVertical_bias="0.227" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

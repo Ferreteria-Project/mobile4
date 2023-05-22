@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="@color/white"
+    android:keyboardNavigationCluster="true"
+    tools:context=".CodigoConfirmacion">
+
+    <Button
+        android:id="@+id/btnBackCC"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:background="@drawable/flechaizquierda"
+        android:text=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/lbDatosCC"
+        android:layout_width="368dp"
+        android:layout_height="33dp"
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:text="¡Casi listo!"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/lbDatosCC2"
+        android:layout_width="368dp"
+        android:layout_height="33dp"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:text="Busca en tu bandeja de entrada el correo electrónico de verificación que te hemos enviado."
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbDatosCC"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <EditText
+        android:id="@+id/txtCodigoCC"
+        android:layout_width="378dp"
+        android:layout_height="57dp"
+        android:background="@drawable/textbox_edit"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="true"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:hint="Codigo"
+        android:inputType="number"
+        android:keyboardNavigationCluster="true"
+        android:paddingStart="13dp"
+        android:tag="1"
+        android:textColor="@color/black"
+        android:textColorHint="#aaa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbDatosCC2"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <ImageView
+        android:id="@+id/lbFerreteriaCC"
+        android:layout_width="169dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/ferreteriatext" />
+
+    <Button
+        android:id="@+id/btnSiguienteCC"
+        android:layout_width="359dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button_edityellow"
+        android:text="Siguiente"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCodigoCC"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="72dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mailyellow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

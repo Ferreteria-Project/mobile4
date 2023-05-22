@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_launcher_background"
+        android:backgroundTint="@color/white"
+        android:keyboardNavigationCluster="true"
+        tools:context=".FotoPerfil">
+
+            <Button
+                android:id="@+id/btnBackF"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:background="@drawable/flechaizquierda"
+                android:text=" "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.043"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <TextView
+                android:id="@+id/lbFotoF"
+                android:layout_width="318dp"
+                android:layout_height="35dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="¡Muestra tu mejor sonrisa!"
+                android:textColor="@android:color/black"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.14" />
+
+            <ImageView
+                android:id="@+id/lbFerreteriaF"
+                android:layout_width="169dp"
+                android:layout_height="42dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.933"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023"
+                app:srcCompat="@drawable/ferreteriatext" />
+
+            <Button
+                android:id="@+id/btnSiguienteF"
+                android:layout_width="359dp"
+                android:layout_height="51dp"
+                android:layout_marginBottom="44dp"
+                android:background="@drawable/button_edityellow"
+                android:text="Siguiente"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgf"
+                android:layout_width="406dp"
+                android:layout_height="347dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#00000000"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnSiguienteF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbFotoF"
+                app:layout_constraintVertical_bias="0.386" />
+
+            <Button
+                android:id="@+id/btnAgregarF"
+                android:layout_width="94dp"
+                android:layout_height="96dp"
+                android:background="@drawable/button_edityellow"
+                android:text="+"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgf"
+                app:layout_constraintEnd_toEndOf="@+id/imgf"
+                app:layout_constraintHorizontal_bias="0.875"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imgf"
+                app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
