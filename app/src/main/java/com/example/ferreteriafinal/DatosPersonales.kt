@@ -19,26 +19,26 @@ import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.properties.Delegates
 
+private lateinit var Tfecha: EditText
+private lateinit var Ttelefono: EditText
+private lateinit var siguienteD: Button
+private lateinit var Tnombre: EditText
+private lateinit var BackD: Button
+
+private var dia by Delegates.notNull<Int>()
+private var mes by Delegates.notNull<Int>()
+private var ano by Delegates.notNull<Int>()
+
+private lateinit var firebaseDatabase: FirebaseDatabase
+private lateinit var databaseReference: DatabaseReference
+
 class DatosPersonales : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var Tfecha: EditText
-    private lateinit var Ttelefono: EditText
-    private lateinit var siguienteD: Button
-    private lateinit var Tnombre: EditText
-    private lateinit var BackD: Button
-
-    private var dia by Delegates.notNull<Int>()
-    private var mes by Delegates.notNull<Int>()
-    private var ano by Delegates.notNull<Int>()
-
-    private lateinit var firebaseDatabase: FirebaseDatabase
-    private lateinit var databaseReference: DatabaseReference
-
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos_personales)
+
+        println("2")
 
         // Fijar teclado
         val editText = findViewById<EditText>(R.id.txtNombreD)

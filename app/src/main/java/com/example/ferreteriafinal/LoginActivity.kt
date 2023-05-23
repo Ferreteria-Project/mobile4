@@ -37,6 +37,7 @@ class LoginActivity : AppCompatActivity() {
 
         registrarsebtn.setOnClickListener {
             val intent = Intent(this, DatosPersonales::class.java)
+            println("1")
             startActivity(intent)
         }
 
