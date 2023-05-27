@@ -10,5 +10,5 @@ data class Products(
     val precio: String? = null,
     val ubicacion: String? = null,
     val imageUrl: String? = null,
-    @Exclude val key: String? = null
+    val key: String? = null
 )

@@ -53,6 +53,14 @@
                 android:layout_marginBottom="32dp"
                 android:text="precio"
                 android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/keyc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/yellow"
+                android:textColorHint="@color/yellow" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

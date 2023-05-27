@@ -4,6 +4,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".ProductEdit">
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="283dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/button_edityellow"
+        android:text="guardar"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtubicacionE"
+        app:layout_constraintVertical_bias="0.643" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="412dp"
+        android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/barra_superior_agregarp" />
+
+    <Button
+        android:id="@+id/btnBackE"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:background="@drawable/flechaizquierda"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgE"
+        android:layout_width="400dp"
+        android:layout_height="163dp"
+        android:src="@drawable/rectangle_67"
+        app:civ_border_color="#00000000"
+        app:civ_border_width="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <Button
+        android:id="@+id/btnAgregarProductE"
+        android:layout_width="56dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/button_edityellow"
+        android:text="+"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgE"
+        app:layout_constraintEnd_toEndOf="@+id/imgE"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgE"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtnomE"
+        android:layout_width="380dp"
+        android:layout_height="59dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/martillo"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Nombre del producto, ejemplo: Martillo"
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgE"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/txtdescripE"
+        android:layout_width="376dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/documento"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Descripción del producto, ejemplo: Este martillo es perfecto para hacer..."
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnomE"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/txtpreciosE"
+        android:layout_width="373dp"
+        android:layout_height="58dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/money"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Precio del producto, ejemplo: $12.25"
+        android:inputType="number"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescripE"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <EditText
+        android:id="@+id/txtubicacionE"
+        android:layout_width="376dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/ubicacionnn"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="Ubicación de la sucursal, ejemplo: 5° avenida norte"
+        android:inputType="textPersonName"
+        android:paddingStart="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpreciosE"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <Button
+        android:id="@+id/btnCancelarE"
+        android:layout_width="285dp"
+        android:layout_height="44dp"
+        android:background="@drawable/custom_buttongrey"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar"
+        app:layout_constraintVertical_bias="0.287" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

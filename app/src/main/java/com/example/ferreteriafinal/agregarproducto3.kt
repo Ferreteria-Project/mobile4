@@ -38,6 +38,8 @@ class agregarproducto3 : AppCompatActivity() {
 
     private val database = Firebase.database
 
+    lateinit var productId: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agregarproducto3)
@@ -98,7 +100,9 @@ class agregarproducto3 : AppCompatActivity() {
                     val precio = preciop.text.toString()
                     val ubicacion = ubicacionp.text.toString()
 
-                    val videogame = Products(name, descripcion, precio, ubicacion, imageUrl)
+                    productId = myRef.push().key.toString()
+
+                    val videogame = Products(name, descripcion, precio, ubicacion, imageUrl, productId)
                     myRef.push().setValue(videogame)
 
                     progressDialog.dismiss()
